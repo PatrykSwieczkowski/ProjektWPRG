@@ -31,29 +31,28 @@
     </div>
     <div class="form-container">
         <h2>Zainteresowany? Wypełnij formularz i otrzymasz nasze najnowsze oferty</h2>
-        <form action="cars.php" method="POST">
+        <form action="cars.php" method="GET">
             <div class="form-group">
                 <label for="name">Twoje imię</label>
                 <input type="text" id="name" name="name" required>
             </div>
-
             <div class="form-group">
                 <label for="email">Twój email</label>
                 <input type="email" id="email" name="email" required>
             </div>
-
             <div class="form-group">
                 <label for="price-range">Przedział cenowy</label>
                 <select id="price-range" name="price-range" required>
-                    <option value="">Wybierz</option>
-                    <option value="low">0 - 20 000 PLN</option>
-                    <option value="medium">20 001 - 50 000 PLN</option>
-                    <option value="high">50 001+ PLN</option>
+                    <option value="0-20000">0 - 20 000 PLN</option>
+                    <option value="20000-40000">20 000 - 40 000 PLN</option>
+                    <option value="40000-60000">40 000 - 60 000 PLN</option>
+                    <option value="60000-80000">60 000 - 80 000 PLN</option>
+                    <option value="80000-100000">80 000 - 100 000 PLN</option>
                 </select>
             </div>
-
             <button type="submit">Wyślij</button>
         </form>
+
     </div>
 </section>
 </body>

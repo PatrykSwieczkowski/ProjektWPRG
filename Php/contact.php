@@ -14,7 +14,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="index.php">Strona główna</a></li>
                 <li><a href="about.html">O nas</a></li>
                 <li><a href="features.html">Funkcje i korzyści</a></li>
                 <li><a href="testimonials.html">Opinie</a></li>
