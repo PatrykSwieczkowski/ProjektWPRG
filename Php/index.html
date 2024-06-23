@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Używane samochody na sprzedaż</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index-styles.css"> <!-- Dodanie specjalnego pliku stylów dla strony głównej -->
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="about.html">O nas</a></li>
+                    <li><a href="features.html">Funkcje i korzyści</a></li>
+                    <li><a href="testimonials.html">Opinie</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                  
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Benzyna, diesel, elektryczne - mamy wszystko</h1>
+            <h2>Używane samochody na sprzedaż</h2>
+        </div>
+        <div class="form-container">
+            <form action="submit_form.php" method="POST">
+                <h3>Zainteresowany? Wypełnij formularz i otrzymasz nasze najnowsze oferty</h3>
+                <label for="name">Twoje imię</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Twój email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="budget">Przedział cenowy</label>
+                <select id="budget" name="budget" required>
+                    <option value="" disabled selected>Wybierz</option>
+                    <option value="under_10k">Do 10,000 zł</option>
+                    <option value="10k_20k">10,000 zł - 20,000 zł</option>
+                    <option value="20k_30k">20,000 zł - 30,000 zł</option>
+                    <option value="over_30k">Powyżej 30,000 zł</option>
+                </select>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">Zgadzam się na otrzymywanie informacji handlowych od [Nazwa Firmy] [czytaj więcej]</label>
+                </div>
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
