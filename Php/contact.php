@@ -6,7 +6,7 @@
     <title>Kontakt - Używane samochody na sprzedaż</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="scrollable">
 <header>
     <div class="nav-container">
         <div class="logo">
@@ -19,16 +19,14 @@
                 <li><a href="features.html">Funkcje i korzyści</a></li>
                 <li><a href="testimonials.html">Opinie</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
+                <li><a href="contact.php">Galeria</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Kontakt</h1>
-        </div>
+
     </section>
 
     <section id="contact" class="contact">
@@ -96,7 +94,7 @@
     <div class="footer-container">
         <div class="footer-section">
             <h4>Kontakt</h4>
-            <p>Telefon: +48 123 456 789</p>
+            <p>Telefon: +48 589 873 d46</p>
             <p>Email: kontakt@przyklad.com</p>
         </div>
         <div class="footer-section">

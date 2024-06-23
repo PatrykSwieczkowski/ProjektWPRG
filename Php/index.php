@@ -54,15 +54,15 @@
     <div class="footer-container">
         <div class="footer-section">
             <h4>Kontakt</h4>
-            <p>Telefon: +48 123 456 789</p>
-            <p>Email: kontakt@przyklad.com</p>
+            <p>Telefon: +48 589 873 346</p>
+            <p>Email: carselling@gmail.com</p>
         </div>
         <div class="footer-section">
             <h4>Media społecznościowe</h4>
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="https://www.facebook.com/messages/e2ee/t/7283173415106667?locale=pl_PL">Facebook</a></li>
+                <li><a href="https://x.com/?lang=pl">Twitter</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
             </ul>
         </div>
         <div class="footer-section">

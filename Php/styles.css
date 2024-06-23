@@ -7,7 +7,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Dodane aby zablokować przewijanie */
 }
 
 body {
@@ -16,6 +15,11 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    overflow: hidden; /* Wyłącz przewijanie domyślnie */
+}
+
+body.scrollable {
+    overflow: auto; /* Włącz przewijanie dla stron z klasą scrollable */
 }
 
 main {
@@ -85,6 +89,258 @@ header nav ul li a {
     font-size: 1.2em;
 }
 
+.about, .features, .testimonials, .contact {
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about h2, .features h2, .testimonials h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p, .features p, .testimonials p, .contact p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-container {
+    width: 60%;
+    padding: 300px 0;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.testimonial-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonial-container p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-text {
+    text-align: left;
+}
+
+.testimonial-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.testimonial-text p {
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container {
+    width: 60%;
+    padding: 50px 0;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.contact-details a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.car-list {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.car-list h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.car-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.car-list ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.car-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-details {
+    text-align: center;
+}
+
+.car-details h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.car-details p {
+    margin: 5px 0;
+}
+
+.car-details .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.grid-item p {
+    margin: 5px 0;
+}
+
+.grid-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #ff4081;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -94,7 +350,7 @@ header nav ul li a {
     max-width: 300px;
     position: absolute;
     right: 20px;
-    top: 90%;
+    top: 40%;
     transform: translateY(-50%);
     color: white;
 }
@@ -157,259 +413,4 @@ button:hover {
 
 .checkbox-container input {
     margin-right: 10px;
-}
-
-.about, .features, .testimonials, .contact {
-    padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.9);
-    color: black;
-    text-align: center;
-    margin-bottom: 60px; /* Add margin to push the footer down */
-}
-
-.contact {
-    background: url('/mnt/data/image.png') no-repeat center center; /* Dodane tło */
-    background-size: cover;
-}
-
-.about h2, .features h2, .testimonials h2, .contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.about p, .features p, .testimonials p, .contact p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.testimonial-container {
-    width: 60%;
-    padding: 300px 0;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
-    color: black;
-    text-align: center;
-}
-
-.testimonial-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.testimonial-container p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.testimonial {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.testimonial img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.testimonial-text {
-    text-align: left;
-}
-
-.testimonial-text h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.testimonial-text p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-.contact-container {
-    width: 60%;
-    padding: 50px 0;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
-    color: black;
-    text-align: center;
-    margin-bottom: 60px; /* Add margin to push the footer down */
-}
-
-.contact-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.contact-container p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contact-details {
-    text-align: left;
-    margin-top: 20px;
-}
-
-.contact-details h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.contact-details p {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.contact-details a {
-    color: #555;
-    text-decoration: none;
-}
-
-.car-list {
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    color: black;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 60px; /* Add margin to push the footer down */
-}
-
-.car-list h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.car-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.car-list ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.car-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.car-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.car-details {
-    text-align: center;
-}
-
-.car-details h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.car-details p {
-    margin: 5px 0;
-}
-
-.car-details .price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #ff4081;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.grid-item {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.grid-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.grid-item h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.grid-item p {
-    margin: 5px 0;
-}
-
-.grid-item .price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #ff4081;
-}
-
-footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: auto;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.footer-section {
-    flex: 1 1 200px;
-    margin: 10px;
-}
-
-.footer-section h4 {
-    margin-bottom: 15px;
-    font-size: 1.2em;
-    color: #ff4081;
-}
-
-.footer-section p,
-.footer-section ul {
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-bottom {
-    background: rgba(34, 34, 34, 0.9);
-    padding: 10px 0;
-    color: white;
 }
