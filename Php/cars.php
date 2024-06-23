@@ -66,20 +66,20 @@
             ],
             [
                 'img' => 'images/car6.jpg',
-                'name' => 'Dacia Duster 1.2 TCe Laureate 4x4',
-                'details' => '2015 - 45 659 km - Benzyna - 125 KM - 1 197 cm3',
+                'name' => 'Volkswagen Touran',
+                'details' => '2013 - 210 000 km - Benzyna - 367 KM - 2996 cm3',
                 'price' => 38900
             ],
             [
-                'img' => 'images/car6.jpg',
-                'name' => 'Dacia Duster 1.2 TCe Laureate 4x4',
-                'details' => '2015 - 45 659 km - Benzyna - 125 KM - 1 197 cm3',
+                'img' => 'images/car7.jpg',
+                'name' => 'Ford Mondeo 2.0',
+                'details' => '2019 - 104 000 km - Benzyna - 180 KM - 2919 cm3',
                 'price' => 68900
             ],
             [
-                'img' => 'images/car6.jpg',
-                'name' => 'Dacia Duster 1.2 TCe Laureate 4x4',
-                'details' => '2015 - 45 659 km - Benzyna - 125 KM - 1 197 cm3',
+                'img' => 'images/car8.jpg',
+                'name' => 'Nissan Patrol Gr 4.5',
+                'details' => '2015 - 141 251 km - Benzyna - 200 KM - 4479 cm3',
                 'price' => 78900
             ],
         ];
