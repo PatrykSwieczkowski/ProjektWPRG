@@ -50,14 +50,38 @@
                 'img' => 'images/car3.jpg',
                 'name' => 'Mercedes-Benz Klasa C',
                 'details' => '2022 - 28 000 km - Benzyna - 204 KM - 1 496 cm3',
-                'price' => 185730
+                'price' => 85730
             ],
             [
                 'img' => 'images/car4.jpg',
                 'name' => 'Honda HR-V 1.6 i-DTEC Executive',
                 'details' => '2016 - 188 626 km - Diesel - 120 KM - 1 597 cm3',
                 'price' => 59900
-            ]
+            ],
+            [
+                'img' => 'images/car5.jpg',
+                'name' => 'Dacia Duster 1.2 TCe Laureate 4x4',
+                'details' => '2015 - 45 659 km - Benzyna - 125 KM - 1 197 cm3',
+                'price' => 28900
+            ],
+            [
+                'img' => 'images/car6.jpg',
+                'name' => 'Dacia Duster 1.2 TCe Laureate 4x4',
+                'details' => '2015 - 45 659 km - Benzyna - 125 KM - 1 197 cm3',
+                'price' => 38900
+            ],
+            [
+                'img' => 'images/car6.jpg',
+                'name' => 'Dacia Duster 1.2 TCe Laureate 4x4',
+                'details' => '2015 - 45 659 km - Benzyna - 125 KM - 1 197 cm3',
+                'price' => 68900
+            ],
+            [
+                'img' => 'images/car6.jpg',
+                'name' => 'Dacia Duster 1.2 TCe Laureate 4x4',
+                'details' => '2015 - 45 659 km - Benzyna - 125 KM - 1 197 cm3',
+                'price' => 78900
+            ],
         ];
 
         $name = $_GET['name'];
