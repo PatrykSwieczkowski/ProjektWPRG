@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Listing</title>
+    <title>Galeria - Używane samochody na sprzedaż</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="scrollable gallery-page">
 <header>
     <div class="nav-container">
         <div class="logo">
@@ -19,50 +19,45 @@
                 <li><a href="features.html">Funkcje i korzyści</a></li>
                 <li><a href="testimonials.html">Opinie</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
+<li><a href="gallery.html">Galeria</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<main>
-    <section class="hero">
+
+    <section id="hero" class="hero">
         <div class="hero-content">
-            <h1>Benzyna, diesel, elektryczne - mamy wszystko</h1>
-            <p>Używane samochody na sprzedaż</p>
+            <h1>Nasze najlepsze egzemplarze:</h1>
+            
         </div>
+
+<main>
     </section>
 
-    <section class="form-container">
-        <h2>Zainteresowany? Wypełnij formularz i otrzymasz nasze najnowsze oferty</h2>
-        <form action="cars.php" method="GET">
-            <label for="name">Twoje imię</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Twój email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="price-range">Przedział cenowy</label>
-            <select id="price-range" name="price-range" required>
-                <option value="0-20000">0 - 20 000 PLN</option>
-                <option value="20000-40000">20 000 - 40 000 PLN</option>
-                <option value="40000-60000">40 000 - 60 000 PLN</option>
-                <option value="60000-80000">60 000 - 80 000 PLN</option>
-                <option value="80000-100000">80 000 - 100 000 PLN</option>
-            </select>
-            <button type="submit">Wyślij</button>
-        </form>
+    <section id="gallery" class="gallery">
+        <div class="gallery-container">
+            <img id="current-image" src="images/car1.jpg" alt="Car Image">
+            <div class="gallery-controls">
+                <button id="prev-button" class="gallery-button">◄</button>
+                <button id="next-button" class="gallery-button">►</button>
+            </div>
+        </div>
     </section>
 </main>
+
 <footer>
     <div class="footer-container">
         <div class="footer-section">
             <h4>Kontakt</h4>
-            <p>Telefon: +48 589 873 346</p>
-            <p>Email: carselling@gmail.com</p>
+            <p>Telefon: +48 589 873 d46</p>
+            <p>Email: kontakt@przyklad.com</p>
         </div>
         <div class="footer-section">
             <h4>Media społecznościowe</h4>
             <ul>
-                <li><a href="https://www.facebook.com/messages/e2ee/t/7283173415106667?locale=pl_PL">Facebook</a></li>
-                <li><a href="https://x.com/?lang=pl">Twitter</a></li>
-                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
             </ul>
         </div>
         <div class="footer-section">
@@ -73,7 +68,6 @@
                 <li><a href="features.html">Funkcje i korzyści</a></li>
                 <li><a href="testimonials.html">Opinie</a></li>
                 <li><a href="contact.php">Kontakt</a></li>
-                <li><a href="gallery.html">Galeria</a></li>
             </ul>
         </div>
         <div class="footer-section">
@@ -88,5 +82,7 @@
         <p>&copy; 2024 Car Listing. Wszelkie prawa zastrzeżone.</p>
     </div>
 </footer>
+
+<script src="gallery.js"></script>
 </body>
 </html>

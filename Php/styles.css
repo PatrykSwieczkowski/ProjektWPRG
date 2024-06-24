@@ -15,13 +15,56 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Wyłącz przewijanie domyślnie */
+    overflow: hidden; 
 }
 
 body.scrollable {
-    overflow: auto; /* Włącz przewijanie dla stron z klasą scrollable */
+    overflow: auto;
 }
 
+body.gallery-page .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 80vh; 
+    text-align: center;
+    margin-top: 20px; 
+}
+
+body.gallery-page .gallery-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+body.gallery-page .gallery-container img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    display: block;
+}
+
+body.gallery-page .gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+body.gallery-page .gallery-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    margin: 0 5px; 
+}
+
+body.gallery-page .gallery-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Reszta stylów pozostaje bez zmian */
 main {
     flex: 1;
 }
